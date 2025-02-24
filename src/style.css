@@ -1,0 +1,61 @@
+body{
+    background-image: url(restaurant-image.jpg);
+}
+
+.button {
+    font-family:Arial, Helvetica, sans-serif;
+    color: white;
+    border-radius: 10px;
+    height: 5vh;
+    width: 7vw;
+    font-size: 1vw;
+    cursor: pointer;
+    background-color: black;
+    margin: auto;
+    margin-left: auto;
+}
+
+#homeButton {
+    margin-left: 39.1%;
+}
+
+.button:hover {
+    opacity: 80%;
+    transform: translateY(5px);
+}
+
+#content {
+    margin: auto;
+    background-color: rgba(255, 206, 116, 0.932);
+    height: 30vw;
+    width: 25vw;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    font-family: verdana;
+    font-weight: 700;
+    color: #000000;
+    text-shadow: 2px 2px 2px #474747;
+}
+
+h4 {
+    text-align: center;
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-family: verdana;
+    font-weight: 700;
+    color: #000000;
+    text-shadow: 2px 2px 2px #474747;
+}
+
+p {
+    text-align: center;
+    font-size: 0.5vw;
+    text-transform: uppercase;
+    font-family: verdana;
+    font-weight: 700;
+    color: #000000;
+}
