@@ -1,22 +1,27 @@
 body{
     background-image: url(restaurant-image.jpg);
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    min-height: 100vh; /* Ensure body covers the viewport height */
+    margin: 0; /* Remove default body margins */
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
 }
 
 .button {
     font-family:Arial, Helvetica, sans-serif;
     color: white;
     border-radius: 10px;
-    height: 5vh;
-    width: 7vw;
-    font-size: 1vw;
+    height: 50px;
+    width: 150px;
+    font-size: 1em;
     cursor: pointer;
     background-color: black;
-    margin: auto;
-    margin-left: auto;
-}
-
-#homeButton {
-    margin-left: 39.1%;
 }
 
 .button:hover {
@@ -25,37 +30,62 @@ body{
 }
 
 #content {
-    margin: auto;
+    margin: 20px auto; /* Center content and add vertical margin */
     background-color: rgba(255, 206, 116, 0.932);
-    height: 30vw;
-    width: 25vw;
+    width: 90%; /* Make content responsive width */
+    max-width: 600px; /* Set a maximum width */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
 h1 {
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 1.5em;
     text-transform: uppercase;
     font-family: verdana;
-    font-weight: 700;
+    font-weight: 700px;
     color: #000000;
     text-shadow: 2px 2px 2px #474747;
 }
 
 h4, h2, h3 {
     text-align: center;
-    font-size: 1vw;
+    font-size: 1em;
     text-transform: uppercase;
     font-family: verdana;
-    font-weight: 700;
+    font-weight: 700px;
     color: #000000;
     text-shadow: 2px 2px 2px #474747;
 }
 
 p {
     text-align: center;
-    font-size: 0.5vw;
+    font-size: 0.7em;
     text-transform: uppercase;
     font-family: verdana;
     font-weight: 700;
     color: #000000;
+}
+
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+    .button {
+        width: 31%; /* Make buttons full width on smaller screens */
+        font-size: 70%; /* Adjust font size for smaller screens */
+        height: auto; /* Let height adjust to content */
+        padding: 10px; /* Add some padding */
+        min-width: 100px;
+    }
+
+    #content {
+      font-size: 80%;
+      min-width: 250px;
+    }
+    h1 {
+        font-size: 1.5em;
+    }
+    h2, h3, h4 {
+        font-size: 1.1em;
+    }
+    p {
+        font-size: 0.5em;
+    }
 }
