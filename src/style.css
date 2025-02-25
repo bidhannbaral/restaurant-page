@@ -1,9 +1,9 @@
 body{
     background-image: url(restaurant-image.jpg);
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
-    min-height: 100vh; /* Ensure body covers the viewport height */
-    margin: 0; /* Remove default body margins */
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
     align-items: center;
 }
 
@@ -30,11 +30,11 @@ nav {
 }
 
 #content {
-    margin: 20px auto; /* Center content and add vertical margin */
+    margin: 20px auto;
     background-color: rgba(255, 206, 116, 0.932);
-    width: 90%; /* Make content responsive width */
-    max-width: 600px; /* Set a maximum width */
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    width: 90%;
+    max-width: 600px;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -66,18 +66,18 @@ p {
     color: #000000;
 }
 
-@media (max-width: 768px) { /* Adjust breakpoint as needed */
+@media (max-width: 768px) {
     .button {
-        width: 31%; /* Make buttons full width on smaller screens */
-        font-size: 70%; /* Adjust font size for smaller screens */
-        height: auto; /* Let height adjust to content */
-        padding: 10px; /* Add some padding */
+        width: 30%;
+        font-size: 70%;
+        height: auto;
+        padding: 10px;
         min-width: 100px;
     }
 
     #content {
-      font-size: 80%;
-      min-width: 250px;
+        font-size: 80%;
+        min-width: 250px;
     }
     h1 {
         font-size: 1.5em;
