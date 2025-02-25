@@ -11,14 +11,14 @@ export function menuContent() {
     const item4description = document.createElement("p");
 
     item1.textContent = "Paurabi's Spicy Chicken";
-    item2.texteContent = "Mata Ji's sour Gundruk";
+    item2.textContent = "Mata Ji's sour Gundruk";
     item3.textContent = "Paurabi's Laughing";
     item4.textContent = "Puntey's Pustakari";
 
-    item1description = "";
-    item2description = "";
-    item3description = "";
-    item4description = "";
+    item1description.textContent = "Made by chef paurabi herself with a lot of spices";
+    item2description.textContent = "Made by mata ji the teacher of chef paurabi";
+    item3description.textContent = "named because chef paurabi laughed so much after eating it";
+    item4description.textContent = "puntey's favorite sweets";
 
     content.appendChild(item1);
     content.appendChild(item1description);

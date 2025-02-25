@@ -1,7 +1,7 @@
 import "./style.css";
-import { homeContent } from "./home";
-import { menuContent } from "./menu";
-import { aboutContent } from "./about";
+import { homeContent } from "./home.js";
+import { menuContent } from "./menu.js";
+import { aboutContent } from "./about.js";
 
 const content = document.querySelector("#content");
 const buttons = document.querySelectorAll(".button");
